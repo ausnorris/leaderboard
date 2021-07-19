@@ -30,7 +30,7 @@ connection.createFetchQuery('players', {}, {}, function(err, results) {
   if (err) { throw err; }
 
   if (results.length === 0) {
-    var names = ['Alex "Your Guilty" Judge', 'Luke "Fresh" Flemming', 'Nathan "Fell the Power" Watts'];
+    var names = ['Alex "Your Guilty" Judge', 'Luke "Fresh" Flemming', 'Nathan "Feel the Power" Watts'];
 
     names.forEach(function(name, index) {
       var doc = connection.get('players', ''+index);
